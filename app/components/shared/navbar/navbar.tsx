@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className="hidden lg:flex w-1/2 justify-end gap-10 xl:gap-16 xxl:gap-20 items-center pr-10 ">
           {leftLinks.map((link, index) => (
             <a
-              href={link.href}
+              // href={link.href}
               key={index}
               className="flex items-center justify-center gap-2 text-gradient hover:text-gray-200 hover:bg-gray-700 transition-all duration-300 cursor-pointer font-semibold"
             >
@@ -55,7 +55,7 @@ const Navbar = () => {
         <div className="hidden lg:flex w-1/2 justify-start gap-10 xl:gap-16 xxl:gap-20 items-center pl-10">
           {rightLinks.map((link, index) => (
             <a
-              href={link.href}
+              // href={link.href}
               key={index}
               className="flex items-center justify-center gap-2 text-gradient hover:text-gray-200 hover:bg-gray-700 transition-all duration-300 cursor-pointer font-semibold text-nowrap"
             >

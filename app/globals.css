@@ -186,3 +186,7 @@ body {
       0px 4px 8px #230203,
       0px 2px 4px #724A1D;
 }
+
+.canvas{
+  touch-action: auto !important;
+}

@@ -173,7 +173,7 @@ const ExploreHero: React.FC = () => {
                 Explore Heroes
               </TitleHeading>
               <div className="absolute inset-0 flex items-center justify-center z-40">
-                <Canvas
+                <Canvas className="canvas"
                   style={{
                     width: isSmallScreen ? "80%" : "100%",
                     height: isSmallScreen ? "80%" : "100%",
