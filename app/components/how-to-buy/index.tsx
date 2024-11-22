@@ -20,7 +20,7 @@ export default function HowToBuy() {
   ];
 
   return (
-    <div className="carousel-container py-20 px-4 sm:px-0">
+    <div id="connect-wallet" className="carousel-container py-20 px-4 sm:px-0">
       <TitleHeading>HOW TO BUY</TitleHeading>
 
       <div className="w-full flex justify-center items-center relative">

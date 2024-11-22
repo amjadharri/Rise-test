@@ -15,7 +15,7 @@ const Tokenomics = () => {
   ];
 
   return (
-    <Section>
+    <Section id="tokenomics">
       <div className="xl:min-h-screen w-full lg:py-20 py-10">
         <div className="py-5">
           <h1 className="lg:text-5xl font-avon relative text-3xl py-10 uppercase font-[400] text-center text-transparent bg-clip-text bg-gradient-to-b from-[#E4D9BD] to-[#AA8246]">

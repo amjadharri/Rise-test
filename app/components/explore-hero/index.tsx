@@ -128,7 +128,7 @@ const ExploreHero: React.FC = () => {
   // }, []);
 
   return (
-    <div className="py-10 overflow-hidden relative min-h-screen h-[100dvh] w-full lg:h-[120dvh] 2xl:h-[100dvh] dxl:h-[80dvh]">
+    <div id="white-paper" className="py-10 overflow-hidden relative min-h-screen h-[100dvh] w-full lg:h-[120dvh] 2xl:h-[100dvh] dxl:h-[80dvh]">
       <div
         className="relative w-full h-full bg-opacity-10 bg-center bg-no-repeat bg-contain"
         style={{

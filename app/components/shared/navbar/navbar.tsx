@@ -8,14 +8,14 @@ import LanguageSelector from "../../common/language-selector";
 
 const Navbar = () => {
   const leftLinks = [
-    { title: "Game", href: "#" },
-    { title: "Token Info", href: "#" },
-    { title: "WhitePaper", href: "#" },
+    { title: "Game", href: "#game" },
+    { title: "Token Info", href: "#tokenomics" },
+    { title: "WhitePaper", href: "#white-paper" },
   ];
 
   const rightLinks = [
-    { title: "FAQ", href: "#" },
-    { title: "Connect Wallet", href: "#" },
+    { title: "FAQ", href: "#faq" },
+    { title: "Connect Wallet", href: "#connect-wallet" },
   ];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,12 +30,13 @@ const Navbar = () => {
       <div className="w-full h-[70px] flex items-center">
         <div className="hidden lg:flex w-1/2 justify-end gap-10 xl:gap-16 xxl:gap-20 items-center pr-10 ">
           {leftLinks.map((link, index) => (
-            <div
+            <a
+              href={link.href}
               key={index}
               className="flex items-center justify-center gap-2 text-gradient hover:text-gray-200 hover:bg-gray-700 transition-all duration-300 cursor-pointer font-semibold"
             >
               {link.title}
-            </div>
+            </a>
           ))}
         </div>
 
@@ -53,12 +54,13 @@ const Navbar = () => {
 
         <div className="hidden lg:flex w-1/2 justify-start gap-10 xl:gap-16 xxl:gap-20 items-center pl-10">
           {rightLinks.map((link, index) => (
-            <div
+            <a
+              href={link.href}
               key={index}
               className="flex items-center justify-center gap-2 text-gradient hover:text-gray-200 hover:bg-gray-700 transition-all duration-300 cursor-pointer font-semibold text-nowrap"
             >
               {link.title}
-            </div>
+            </a>
           ))}
           <div className="relative flex items-center gap-4">
             <CustomButton label="Buy" />

@@ -20,6 +20,7 @@ const FAQs: React.FC = () => {
 
   return (
     <div
+      id="faq"
       className="bg-cover bg-center lg:min-h-screen bg-no-repeat lg:py-10 py-5 lg:px-10"
       style={{ backgroundImage: `url(${bg.src})` }}
     >

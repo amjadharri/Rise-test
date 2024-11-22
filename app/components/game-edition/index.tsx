@@ -159,7 +159,7 @@ const GameEditionsGrid: React.FC = () => {
   ];
 
   return (
-    <Section>
+    <Section id="game">
       <div className="absolute inset-0 bg-black opacity-40"></div>
 
       <div data-aos="zoom-in" className="relative z-10 py-10">

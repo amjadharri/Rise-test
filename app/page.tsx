@@ -1,4 +1,5 @@
 import BuildArmy from "./components/build-army";
+import EmailOptIn from "./components/common/EmailOptIn";
 import DividerMenu from "./components/divider-menu";
 import ExploreHero from "./components/explore-hero";
 import FAQs from "./components/faqs/faqs";
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       <HeroSection />
+      <EmailOptIn />
       <DividerMenu />
       <Features />
       <div>
