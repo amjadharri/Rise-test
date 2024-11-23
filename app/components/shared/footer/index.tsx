@@ -68,7 +68,7 @@ export default function Footer() {
               understand and accept these risks.
             </h4>
             <h4 className="text-center text-[#fff1de] text-shadow-effect-para text-md">
-              @copyright 2024 All rights reserved by TheRiseOfMemes
+              @copyright 2024 All rights reserved by TheRiseOfMemes.
             </h4>
           </div>
         </div>

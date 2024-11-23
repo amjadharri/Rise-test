@@ -1,9 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 export default function DividerMenu() {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+
   const menuItems = [
     "Build & Conquer",
     "Real Time Battles",
@@ -12,8 +15,23 @@ export default function DividerMenu() {
     "High-Quality Graphics",
   ];
 
-  const isSmallScreen =
-    typeof window !== "undefined" && window.innerWidth < 1024;
+  useEffect(() => {
+    setIsClient(true);
+    const checkScreenSize = () => {
+      setIsSmallScreen(window.innerWidth < 1024);
+    };
+    
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+    
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
+
+  // Don't render anything until after client-side hydration
+  if (!isClient) {
+    return null;
+  }
+
   const repeatedItems = isSmallScreen
     ? [...menuItems, ...menuItems, ...menuItems]
     : menuItems;
@@ -29,7 +47,7 @@ export default function DividerMenu() {
           >
             {repeatedItems.map((item, index) => (
               <div
-                key={index}
+                key={`${item}-${index}`}
                 className="flex items-center gap-8 whitespace-nowrap"
               >
                 <div className="text-gradient text-base md:text-lg xl:text-xl tracking-wide">
@@ -38,7 +56,7 @@ export default function DividerMenu() {
                 {index % menuItems.length !== menuItems.length - 1 && (
                   <Image
                     src={"/assets/divider-menu-image.svg"}
-                    alt=""
+                    alt="divider"
                     width={10}
                     height={10}
                   />
@@ -64,7 +82,6 @@ export default function DividerMenu() {
           animation: scroll 20s linear infinite;
         }
 
-        /* Disable animation for larger screens */
         @media (min-width: 1024px) {
           .animate-scroll {
             animation: none;

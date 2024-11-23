@@ -1,12 +1,16 @@
 "use client";
 
 import React, { useState, Suspense, useMemo, useEffect } from "react";
-import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import TitleHeading from "../common/title-heading";
 import UpgradeableSkills from "../common/upgradeable-skills";
 import AvatarButton from "../common/avatar-button";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
+const DynamicCanvas = dynamic(() => import('@react-three/fiber').then((mod) => mod.Canvas), {
+  ssr: false,
+});
 
 const ExploreHero: React.FC = () => {
   const [selectedAvatar, setSelectedAvatar] = useState<string>("general");
@@ -173,7 +177,7 @@ const ExploreHero: React.FC = () => {
                 Explore Heroes
               </TitleHeading>
               <div className="absolute inset-0 flex items-center justify-center z-40">
-                <Canvas className="canvas"
+                <DynamicCanvas className="canvas"
                   style={{
                     width: isSmallScreen ? "80%" : "100%",
                     height: isSmallScreen ? "80%" : "100%",
@@ -293,7 +297,7 @@ const ExploreHero: React.FC = () => {
                     minPolarAngle={Math.PI / 2}
                     rotateSpeed={3}
                   />
-                </Canvas>
+                </DynamicCanvas>
               </div>
             </div>
             <div className="flex flex-col items-center justify-center">
