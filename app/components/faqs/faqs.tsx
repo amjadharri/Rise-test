@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Section from "../common/section";
-import bg from "/public/assets/roadmap/faq-bg.svg";
+import bg from "/public/assets/roadmap/faq-bg.webp";
 import TitleHeading from "../common/title-heading";
 import { DownArrow, UpArrow } from "@/app/svg";
 import { faqData } from "./data";

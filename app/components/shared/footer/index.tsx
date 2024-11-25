@@ -10,7 +10,7 @@ export default function Footer() {
     <footer>
       <div
         className="relative w-full xl:min-h-screen py-10 bg-opacity-10 bg-no-repeat bg-cover flex flex-col items-center justify-center"
-        style={{ backgroundImage: "url('/assets/footer-bg.svg')" }}
+        style={{ backgroundImage: "url('/assets/footer-bg.webp')" }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-[#20150b] via-transparent to-[#20150b] opacity-80 pointer-events-none"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-[#20150b] via-transparent to-[#20150b] opacity-80 pointer-events-none"></div>
@@ -68,7 +68,7 @@ export default function Footer() {
               understand and accept these risks.
             </h4>
             <h4 className="text-center text-[#fff1de] text-shadow-effect-para text-md">
-              @copyright 2024 All rights reserved by TheRiseOfMemes.
+              @copyright 2024 All rights reserved by TheRiseOfMemes
             </h4>
           </div>
         </div>

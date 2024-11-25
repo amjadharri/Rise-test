@@ -11,7 +11,7 @@ import HowToBuy from "./components/how-to-buy";
 import FactionSlider from "./components/meme-kindom";
 import Roadmap from "./components/roadmap";
 import Tokenmoics from "./components/tokenomics";
-import bg from "/public/assets/Tokenomics-bg.png";
+import bg from "/public/assets/Tokenomics-bg.webp";
 
 export default function Home() {
   return (
@@ -36,7 +36,7 @@ export default function Home() {
       <div
         className="relative bg-bottom bg-cover  bg-no-repeat"
         style={{
-          backgroundImage: "url('/assets/editionBg.png')",
+          backgroundImage: "url('/assets/editionBg.webp')",
         }}
       >
         <GameEditionsGrid />

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import img from "/public/assets/roadmap/bg2.svg";
+import img from "/public/assets/roadmap/bg2.webp";
 import img2 from "/public/assets/roadmap/mobile.png";
 
 const Roadmap = () => {

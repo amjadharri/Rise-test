@@ -18,7 +18,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="w-full h-auto 2xl:h-auto bg-cover bg-left bg-no-repeat lg:bg-[url('/assets/main-hero-image.svg')] ">
+    <div className="w-full h-auto 2xl:h-auto bg-cover bg-left bg-no-repeat lg:bg-[url('/assets/main-hero-image.webp')] ">
       <div
         className="w-full h-full flex flex-col-reverse lg:flex-row bg-no-repeat bg-contain bg-[url('/assets/hero-image-mobile.png')] lg:bg-none"
         style={{
@@ -70,7 +70,7 @@ const HeroSection = () => {
             className="relative w-full h-full z-10 md:z-0 overflow-hidden"
           >
             <img
-              src="/assets/hero-form-bg.png"
+              src="/assets/hero-form-bg.webp"
               alt="Background"
               className="absolute top-0 left-0 w-full h-[110%] md:h-[150%] object-cover md:object-cover lg:object-cover"
             />
